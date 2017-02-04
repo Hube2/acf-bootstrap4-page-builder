@@ -24,9 +24,6 @@ a bit more user friendly and more well laid out than what you would get in a sta
 ACF field group. You might notices one of two significant changes.
 
 The most completed section is under Body => Rows => Columns.
-You might want to try creating new containers, rows and columns, deleting them, moving them
-around, changing the conainer, row and column names and watch the blue titles that I've added.
-I've put a lot of work into making sure that you always know what it is that you're editing.
 
 I would be happy to entertain comments and questions in the issues here, but please keep 
 in mind that I have a specific scope in mind for this idea and that I have no intention 

@@ -3,7 +3,6 @@
 	if (typeof(acf) == 'object') {
 		
 		acf.add_action('ready append sortstop remove', function($el) {
-			
 			// setup
 			jQuery(function($) {
 				acf_bs4_page_builder_add_paths($);
@@ -237,6 +236,7 @@
 	
 	function acf_bs4_page_builder_add_paths($) {
 		// add container names
+		console.log('build/paths');
 		var $containers = $('[data-key="field_586d3169ebc11"]');
 		if (!$containers.length) {
 			return;
@@ -252,7 +252,7 @@
 				$container_name = 'Container '+$count;
 				element.value = $container_name;
 			}
-			
+			console.log($container_name);
 			$count++;
 			
 			var $data = [$container_name];
@@ -278,13 +278,14 @@
 				
 				var $row_name = element.value;
 				if ($row_name.match(/^Row [0-9]+$/)) {
-					$row_name = 'Row '+$count;
+					$row_name = 'Row '+$count_rows;
 					element.value = $row_name;
 				}
 				
 				$count_rows++;
 				
 				$data[1] = $row_name;
+				console.log($data);
 				
 				// add path info to container
 				//console.log($('td.acf-fields'));
@@ -310,7 +311,7 @@
 					
 					var $column_name = element.value;
 					if ($column_name.match(/^Column [0-9]+$/)) {
-						$column_name = 'Column '+$count;
+						$column_name = 'Column '+$count_columns;
 						element.value = $column_name;
 					}
 					
@@ -345,7 +346,7 @@
 						
 						var $nested_row_name = element.value;
 						if ($nested_row_name.match(/^Row [0-9]+$/)) {
-							$nested_row_name = 'Row '+$count;
+							$nested_row_name = 'Row '+$count_nested_rows;
 							element.value = $nested_row_name;
 						}
 						
@@ -381,7 +382,7 @@
 							
 							var $nested_column_name = element.value;
 							if ($nested_column_name.match(/^Column [0-9]+$/)) {
-								$nested_column_name = 'Column '+$count;
+								$nested_column_name = 'Column '+$count_nested_columns;
 								element.value = $nested_column_name;
 							}
 							
