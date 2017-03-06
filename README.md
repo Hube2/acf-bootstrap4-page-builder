@@ -78,3 +78,13 @@ management of "Content Features" that are outside of the scope of this project.
 
 This project itself is actually part of a bigger personal project that I am working on, 
 and the end results of this project must fit the needs of that other project.
+
+### Related projects
+
+The following are projects that are separate to, but will contibute in some way to this project.
+
+https://github.com/Hube2/acf-get-set-js - A JS API for getting and setting acf field values
+
+https://github.com/Hube2/shortcodes-ultimate - a forked version of another plugin that will allow creating bootstrap 4 specific shortcodes
+
+

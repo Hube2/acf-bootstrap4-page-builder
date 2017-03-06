@@ -16,6 +16,10 @@
 	// If this file is called directly, abort.
 	if (!defined('WPINC')) {die;}
 	
+	require(dirname(__FILE__).'/inc/admin-page.php');
+	require(dirname(__FILE__).'/inc/options.php');
+	require(dirname(__FILE__).'/inc/post-types.php');
+	
 	new acf_bs4__page_builder();
 	
 	class acf_bs4__page_builder {
@@ -56,6 +60,7 @@
 		
 		public function activate() {
 			// just in case I need to do something to activate
+			do_action('acf-bs4-page-builder/activate');
 		} // end public function activate
 		
 		public function deactivate() {

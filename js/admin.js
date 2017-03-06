@@ -236,7 +236,7 @@
 	
 	function acf_bs4_page_builder_add_paths($) {
 		// add container names
-		console.log('build/paths');
+		///console.log('build/paths');
 		var $containers = $('[data-key="field_586d3169ebc11"]');
 		if (!$containers.length) {
 			return;
@@ -252,7 +252,7 @@
 				$container_name = 'Container '+$count;
 				element.value = $container_name;
 			}
-			console.log($container_name);
+			//console.log($container_name);
 			$count++;
 			
 			var $data = [$container_name];
@@ -285,7 +285,7 @@
 				$count_rows++;
 				
 				$data[1] = $row_name;
-				console.log($data);
+				//console.log($data);
 				
 				// add path info to container
 				//console.log($('td.acf-fields'));
@@ -423,7 +423,7 @@
 		
 		$(document).on('dblclick', '.page-builder-element-path', function (e) {
 			//console.log($(this).closest('.acf-fields').find('.acf-field .acf-input input').first());
-			$(this).closest('.acf-row').find('[data-event="collapse-row"]').first().click();
+			$(this).closest('.acf-row').find('>.acf-row-handle.order [data-event="collapse-row"]').click();
 			
 			if (window.getSelection) {
 				if (window.getSelection().empty) {  // Chrome
@@ -434,7 +434,7 @@
 			} else if (document.selection) {  // IE?
 				document.selection.empty();
 			}
-			$(this).closest('.acf-fields').find('.acf-field .acf-input input').first().blur();
+			$(this).closest('.acf-fields').find('.acf-field .acf-input input').blur();
 		});
 		
 	} // end function acf_bs4_page_builder_add_paths
