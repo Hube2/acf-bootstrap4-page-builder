@@ -3,9 +3,9 @@
 	// If this file is called directly, abort.
 	if (!defined('WPINC')) {die;}
 	
-	new acf_bs4_page_builder_post_types();
+	new acfbs4_page_builder_post_types();
 	
-	class acf_bs4_page_builder_post_types {
+	class acfbs4_page_builder_post_types {
 		
 		private $post_type = 'acf-bs4-pb-template';
 		private $taxonomy = 'acf-bs4-pb-template-type';
@@ -192,7 +192,7 @@
 			register_taxonomy($this->taxonomy, $this->post_type, $args);
 		} // end private function template_types
 		
-	} // end class acf_bs4_page_builder_post_types
+	} // end class acfbs4_page_builder_post_types
 
 	
 ?>

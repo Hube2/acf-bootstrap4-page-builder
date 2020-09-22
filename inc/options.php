@@ -3,9 +3,9 @@
 	// If this file is called directly, abort.
 	if (!defined('WPINC')) {die;}
 	
-	new acf_bs4_page_builder_options();
+	new acfbs4_page_builder_options();
 	
-	class acf_bs4_page_builder_options {
+	class acfbs4_page_builder_options {
 		
 		private $options = array();
 		
@@ -31,6 +31,6 @@
 			acf_add_options_sub_page($args);
 		} // end private function options_page
 		
-	} // end class acf_bs4_page_builder_options
+	} // end class acfbs4_page_builder_options
 	
 ?>

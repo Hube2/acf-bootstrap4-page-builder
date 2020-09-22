@@ -3,9 +3,9 @@
 	// If this file is called directly, abort.
 	if (!defined('WPINC')) {die;}
 	
-	new acf_bs4_page_builder_admin_page();
+	new acfbs4_page_builder_admin_page();
 	
-	class acf_bs4_page_builder_admin_page {
+	class acfbs4_page_builder_admin_page {
 		
 		private $admin_page = false;
 		private $capability = 'manage_options';

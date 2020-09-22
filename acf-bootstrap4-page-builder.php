@@ -20,9 +20,9 @@
 	require(dirname(__FILE__).'/inc/options.php');
 	require(dirname(__FILE__).'/inc/post-types.php');
 	
-	new acf_bs4__page_builder();
+	new acfbs4_page_builder();
 	
-	class acf_bs4__page_builder {
+	class acfbs4_page_builder {
 		
 		private $version = '0.0.1';
 		
@@ -78,6 +78,6 @@
 			return $run;
 		} // end private function run
 		
-	} // end class acf_bs4__page_builder
+	} // end class acfbs4_page_builder
 	
 ?>
